@@ -227,11 +227,22 @@
 									coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 								}
 
-								new mapboxgl.Popup()
+
+								var popup = new mapboxgl.Popup({
+									closeButton: false,
+									closeOnClick: false
+								});
+
+								popup
+								.setLngLat(coordinates)
+								.setHTML("<h3>" + description + "</h3>")
+								.addTo(map);
+								
+/* 								new mapboxgl.Popup()
 									.setLngLat(coordinates)
-									.setHTML("<body style=\"background-color:powderblue;\">"+description+"</body>")
+									.setHTML("<body style=\"background-color:powderblue;\">" + description + "</body>")
 									.addTo(map)
-									;
+									; */
 							});
 							// Change the cursor to a pointer when the mouse is over the places layer.
 							map.on('mouseenter', 'points', function () {
