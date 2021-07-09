@@ -14,10 +14,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 	<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
-    <link rel="stylesheet" href="https://sjliu.me/360image/js/pannellum.css" />
-    <script type="text/javascript" src="https://sjliu.me/360image/pannellum.js"></script>
-    <link rel="stylesheet" href="https://sjliu.me/360image/js/bootstrap.min.css">
-    <link rel="stylesheet" href="https://sjliu.me/360image/js/font-awesome.min.css">
+	<link rel="stylesheet" href="https://sjliu.me/360image/js/pannellum.css" />
+	<script type="text/javascript" src="https://sjliu.me/360image/pannellum.js"></script>
+	<link rel="stylesheet" href="https://sjliu.me/360image/js/bootstrap.min.css">
+	<link rel="stylesheet" href="https://sjliu.me/360image/js/font-awesome.min.css">
 	<style>
 		body {
 			margin: 0;
@@ -195,22 +195,22 @@
 									'id': 'points',
 									'type': 'circle',
 									'source': 'points',
-                    'paint': {
-                        'circle-radius': {
-                            'base': 5,
-                            'stops': [
-                                [1, 5],
-                                [11, 5],
-                                [15, 6],
-                                [16, 10],
-                                [17, 14],
-                                [18, 18],
-                                [19, 22],
-                                [20, 26]
-                            ]
-                        },
-                        'circle-color': '#00FF00'
-                    },
+									'paint': {
+										'circle-radius': {
+											'base': 5,
+											'stops': [
+												[1, 5],
+												[11, 5],
+												[15, 6],
+												[16, 10],
+												[17, 14],
+												[18, 18],
+												[19, 22],
+												[20, 26]
+											]
+										},
+										'circle-color': '#00FF00'
+									},
 									'filter': ['==', '$type', 'Point']
 								})
 							});
@@ -229,7 +229,7 @@
 
 								new mapboxgl.Popup()
 									.setLngLat(coordinates)
-									.setHTML("<p style=\"color:blue\">"+description+"</p>")
+									.setHTML("<p style=\"color:blue\">" + description + "</p>")
 									.addTo(map);
 							});
 							// Change the cursor to a pointer when the mouse is over the places layer.

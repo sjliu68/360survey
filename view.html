@@ -5,22 +5,23 @@
 <script src="https://sjliu.me/360image/js/bootstrap.min.js"></script>
 <script src="https://sjliu.me/360image/js/jquery.min.js"></script>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<title>香港大學光污染研究 Light Pollution Research at The University of Hong Kong</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="http://nightsky.physics.hku.hk/assets/js/myOverlay.js"></script>
 	<script type="text/javascript" src="http://nightsky.physics.hku.hk/assets/js/handleGMdata.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    <link rel="stylesheet" href="https://sjliu.me/360image/js/pannellum.css" />
-    <script type="text/javascript" src="https://sjliu.me/360image/js/pannellum.js"></script>
-    <link rel="stylesheet" href="https://sjliu.me/360image/js/bootstrap.min.css">
-    <link rel="stylesheet" href="https://sjliu.me/360image/js/font-awesome.min.css">
+	<link rel="stylesheet" href="https://sjliu.me/360image/js/pannellum.css" />
+	<script type="text/javascript" src="https://sjliu.me/360image/js/pannellum.js"></script>
+	<link rel="stylesheet" href="https://sjliu.me/360image/js/bootstrap.min.css">
+	<link rel="stylesheet" href="https://sjliu.me/360image/js/font-awesome.min.css">
 	<style>
 		body {
 			margin: 0;
@@ -126,8 +127,7 @@
 	<div id="wrapper">
 		<!-- =============Header==================== -->
 		<div id="header">
-			<div class="logo left"><a href="http://nightsky.physics.hku.hk/assets/../index.php"><img
-						src="logo.png" alt="香港大學光污染研究 Light Pollution Research at The University of Hong Kong
+			<div class="logo left"><a href="http://nightsky.physics.hku.hk/assets/../index.php"><img src="logo.png" alt="香港大學光污染研究 Light Pollution Research at The University of Hong Kong
 " /></a></div>
 			<div class="shortcut right">
 				<div class="left">
@@ -172,18 +172,19 @@
 			<div class="content-details" style="height:620px">
 				<div class="container">
 					<br><strong>
-						<h2>360 Image Viewer (<a href="https://sjliu.me/360survey" style="color: black">Return to Map</a>) </h2>
+						<h2>360 Photo Viewer (<a href="https://sjliu.me/360survey" style="color: black">Return to
+								Map</a>) </h2>
 					</strong></br>
 					<div style="float:left;" id="map">
 						<div id="panorama"></div>
 						<script>
 							var received = GetRequest();
 							console.log(received['param1'])
-            pannellum.viewer('panorama', {
-                "type": "equirectangular",
-                "panorama": "https://sjliu.me/360image/im/"+getParams("p3")+"_"+getParams("p2")+"_" + getParams("p1") + ".JPG",
-                "autoLoad": true
-            });
+							pannellum.viewer('panorama', {
+								"type": "equirectangular",
+								"panorama": "https://sjliu.me/360image/im/" + getParams("p3") + "_" + getParams("p2") + "_" + getParams("p1") + ".JPG",
+								"autoLoad": true
+							});
 							function GetRequest() {
 								var url = location.search; //获取url中"?"符后的字串
 								var theRequest = new Object();
