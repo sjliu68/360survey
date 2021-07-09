@@ -229,7 +229,7 @@
 
 								new mapboxgl.Popup()
 									.setLngLat(coordinates)
-									.setHTML(description)
+									.setHTML("<p style=\"color:blue\">"+description+"</p>")
 									.addTo(map);
 							});
 							// Change the cursor to a pointer when the mouse is over the places layer.
