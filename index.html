@@ -189,7 +189,7 @@
 								// Add a GeoJSON source with 2 points
 								map.addSource('points', {
 									'type': 'geojson',
-									'data': 'https://sjliu.me/360image/selectedt20210709c.geojson'
+									'data': 'https://sjliu.me/360image/selectedt20210710a.geojson'
 								});
 								map.addLayer({
 									'id': 'points',
@@ -229,15 +229,15 @@
 
 
 								var popup = new mapboxgl.Popup({
-									closeButton: false,
-									closeOnClick: false
+									closeButton: true,
+									closeOnClick: true
 								});
 
 								popup
 								.setLngLat(coordinates)
-								.setHTML("<h3>" + description + "</h3>")
+								.setHTML("<p><a href=\"" + description + "\" target=\"_blank\" style=\"color: DarkBlue\">Clip here for the VR view</a></p>")
 								.addTo(map);
-								
+
 /* 								new mapboxgl.Popup()
 									.setLngLat(coordinates)
 									.setHTML("<body style=\"background-color:powderblue;\">" + description + "</body>")
